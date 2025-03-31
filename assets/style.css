@@ -1,5 +1,5 @@
 body{
-    background-color:#1f1f1f;
+    background-color: #1f1f1f;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,15 +7,16 @@ body{
     height: 100vh;
 }
 
+/* navegação da pagina */
 .nav-bar{
     position: relative;
     background-color: rgba(168, 168, 168, 0.3) ;
     border-bottom: 1px solid #A8a8a8;
     height: 60px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-right: 40px;
     align-items: center;
-    
 }
 
 nav ul{
@@ -23,7 +24,7 @@ nav ul{
     justify-content: center;
     list-style: none;
     padding: 10px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 18px;
 }
 
@@ -40,6 +41,8 @@ nav a:hover{
 nav a:active{
     color: #F7F7F7;
 }
+
+/* Inicio */
 
 .apresentaçao{
     padding: 250px 250px;
@@ -58,6 +61,25 @@ h1{
     font-size: 24px;
     font-weight: 600;
     color: #F7F7F7;
+}
+
+.efeito-escrita{
+    color: #4C9F70;
+    overflow: hidden;
+}
+
+.efeito-escrita::after{
+    content: '|';
+    display: inline-block;
+    font-weight: 300;
+    animation: blink 0.75s step-end infinite;
+    color: #F7F7F7;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }
 
 .linkedin{
@@ -87,3 +109,146 @@ h1{
 .linkedin:active{
     transform: scale(0.9);
 }
+
+hr{
+    margin-top: 215px;
+    width: auto;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    border-image: initial;
+    border-top: 1px solid #A8A8A8;
+}
+
+/* Sobre Mim */
+
+.sobremim{
+    display: flex;
+    padding: 250px;
+    color: #F7F7F7;
+    
+}
+
+.sobremim p{
+    width: 500px;
+}
+
+.img-sbr{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    perspective: 800px;
+}
+
+
+img{
+    width: 400px;
+    height: auto;
+    transition: transform 0.1s ease-out;
+    transform-origin: center center;
+}
+
+/* Projetos */
+
+
+.aba-projetos{
+    padding: 250px;
+}
+
+.projetos{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aba-projetos .projetos{
+    padding-top: 100px;
+}
+
+
+.projeto1{
+    display: flex;
+    flex-direction: column;
+}
+
+.projeto2{
+    display: flex;
+    flex-direction: column;
+}
+
+.projeto3{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Responsividade */
+
+@media(max-width: 450px){
+
+    .nav-bar{
+        padding: 0;
+        height: 60px;
+        justify-content: center;
+    }
+    
+    nav ul{
+        letter-spacing: 0px;
+        font-size: 13px;
+    }
+    
+    nav a{
+        padding: 0px 15px;
+    }
+    
+    
+    /* Inicio */
+    
+    .apresentaçao{
+        padding: 250px 30px;
+        letter-spacing: 0px;
+    }
+    
+    h1{
+        font-size: 47px;
+    }
+    
+    .apresentaçao p{
+        margin: 0;
+        font-size: 26px;
+        font-weight: 600;
+        color: #F7F7F7;
+    }
+    
+    
+    /* Sobre Mim */
+    
+    .sobremim{
+        padding: 250px 30px;
+        flex-direction: column;
+    }
+    
+    .sobremim p{
+        width: auto;
+    }
+    
+    /* Projetos */
+    
+    .aba-projetos{
+        padding: 250px 30px;
+    }
+    
+    .projetos{
+        flex-direction: column;
+        gap: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+}
+
+
+
+
