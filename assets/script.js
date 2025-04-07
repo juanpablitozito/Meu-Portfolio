@@ -22,12 +22,6 @@ typeWriter();
 
 
 
-
-
-
-
-
-
 // Efeito Imagem
 
 const imagem = document.querySelector('img');
