@@ -182,6 +182,7 @@ img{
 .projeto1{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .projeto2{
@@ -194,14 +195,35 @@ img{
     flex-direction: column;
 }
 
-.content-inside{
-    transition: opacity 0.5s ease
+.content-inside {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    display: inline-block;
+    transition: filter 0.3s ease;
 }
 
-.content-inside:hover{
+.content-inside:hover {
     cursor: pointer;
-    opacity: 0.1;
-    
+    filter: blur(5px);
+}
+
+.link {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(50%);
+    padding: 10px 20px;
+    background-color: #4C9F70;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;  
+    transition: opacity 0.3s ease;
+}
+
+.content-inside:hover .link {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 
