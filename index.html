@@ -10,17 +10,35 @@
     <title>Juan Martins - Portfólio</title>
 </head>
 
-<body>
+<body class="light-mode">
 
         <header class="nav-bar">
             <section class="navigation">
                 
                 <nav>
-                    <ul>
+                    
+                  <label class="ui-switch theme-toggle">
+                    <input type="checkbox" id="toggle-theme">
+                    <div class="slider">
+                      <div class="circle"></div>
+                    </div>
+                  </label>
+
+                    <p class="center-title">Portfólio</p>
+
+
+                    <ul class="nav-links">
                         <li><a href="#inicio">Início</a></li>
                         <li><a href="#sobremim" >Sobre mim</a></li>
                         <li><a href="#projetos" >Projetos</a></li>
-                    </ul>
+                        <li><a href="#contato" >Contato</a></li>
+                      </ul>
+
+                      <div class="menu-hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
                 </nav>
             </section>
         </header>
@@ -28,12 +46,18 @@
 
         <main>
             <section class="apresentaçao" id="inicio">
+
+                <div class="eu-sou">
                 <p>Oi, eu sou</p>
                 <h1 class="efeito-escrita" id="efeito-digitando">Juan Martins.</h1>
                 <p>Desenvolvedor Front-End</p>
                
                 
-                <a href="https://www.linkedin.com/in/juan-martins-12610b28a"><button class="linkedin">Baixar CV</button></a> 
+                <a href="https://www.linkedin.com/in/juan-martins-12610b28a"><button class="linkedin">LinkedIn</button></a> 
+                
+              </div>
+
+                
                 
             </section>
             
@@ -64,7 +88,7 @@
                     
                 <div class="img-sbr">
 
-                    <img src="assets/img/pngtree-coder-clipart-boy-working-with-computer-game-on-the-desk-vector-png-image_6804917.png">
+                    <img class="image" src="assets/img/pngtree-coder-clipart-boy-working-with-computer-game-on-the-desk-vector-png-image_6804917.png">
                     
                 </div>
 
@@ -74,20 +98,21 @@
 
         <section class="aba-projetos" id="projetos">
             
-            <h1>Meus Projetos</h1>
+            <h1>Projetos</h1>
             
             <div class="projetos">
 
                 <div class="projeto1">
-                    <img src="assets/img/spotify.png" class="content-inside" alt="">
-                    <a href="https://juanpablitozito.github.io/SpotifyLogin/"><button class="link">Acessar</button></a>
+                    <img src="assets/img/em_breve.jpg" class="content-inside" alt="">
+                    <a href="#"><button class="link">Ver</button></a>
                 </div>
                 <div class="projeto2">
                     <img src="assets/img/em_breve.jpg" class="content-inside" alt="">
-                    
+                    <a href="#"><button class="link">Ver</button></a>
                 </div>
                 <div class="projeto3">
                     <img src="assets/img/em_breve.jpg" class="content-inside" alt="">
+                    <a href="#"><button class="link">Ver</button></a>
                 </div>
 
             </div>
@@ -96,7 +121,7 @@
 
     </main>
 
-        <footer>
+        <footer id="contato">
 
             <p class="creditos">
                 Copyright © 2025 <a href="#inicio">Juan Martins</a> Todos os direitos reservados.
@@ -107,7 +132,7 @@
                   <a
                     data-social="linkedin"
                     aria-label="LinkedIn"
-                    href="https://linkedin.com/"
+                    href="https://www.linkedin.com/in/juan-martins-12610b28a"
                   >
                     <div class="filled"></div>
                     <svg
@@ -128,7 +153,7 @@
                   <div class="tooltip">LinkedIn</div>
                 </li>
                 <li class="icon-content">
-                  <a data-social="github" aria-label="GitHub" href="https://www.github.com/">
+                  <a data-social="github" aria-label="GitHub" href="https://www.github.com/juanpablitozito">
                     <div class="filled"></div>
                     <svg
                       xml:space="preserve"
@@ -151,7 +176,7 @@
                   <a
                     data-social="instagram"
                     aria-label="Instagram"
-                    href="https://www.instagram.com/"
+                    href="https://www.instagram.com/devbyjuan/"
                   >
                     <div class="filled"></div>
                     <svg
