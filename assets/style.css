@@ -120,7 +120,7 @@ nav{
 
 .light-mode .nav-bar{
     background-color: #4C9F70;
-    border-bottom: 2px solid #141414 ;
+    border-bottom: 2px solid #387453 ;
 }
 
 .light-mode a:hover{
@@ -372,7 +372,7 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    gap: 20px;
 }
 
 .aba-projetos .projetos{
@@ -433,172 +433,6 @@ hr{
     background-color: #f7f7f7;
     color: #4C9F70;
 }
-
-
-
-/* Responsividade */
-
-@media(max-width: 768px){
-
-    .nav-bar{
-        padding: 0;
-        height: 60px;
-        justify-content: center;
-    }
-    
-    nav ul{
-        letter-spacing: 0px;
-        font-size: 13px;
-    }
-    
-    nav a{
-        padding: 0px 15px;
-    }
-
-    .nav-links{
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100vw;
-        background-color: rgba(76, 159, 112, 0.9);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-        transform: translateY(-100%);
-        visibility: hidden;
-        opacity: 0;
-        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s;
-        z-index: 1000;
-        display: flex;
-    }
-
-    .nav-links.active{
-        transform: translateY(0);
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .nav-links li a{
-        color: #F7F7F7;
-        text-decoration: none;
-        font-size: 26px;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        transition: color 0.3s ease;
-    }
-
-    .nav-links li a:active{
-        color: #A8A8A8;
-        text-decoration: underline;
-    }
-
-    .menu-hamburger{
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-        gap: 5px;
-        z-index: 1100;
-        position: relative;
-    }
-
-    .menu-hamburger span{
-        width: 25px;
-        height: 3px;
-        background-color: #F7F7F7;
-    }
-
-    
-    
-    .apresentaçao{
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        letter-spacing: 0px;
-        padding: 0;
-    }
-
-    
-    h1{
-        font-size: 34px;
-    }
-    
-    .apresentaçao p{
-        
-        font-size: 18px;
-        font-weight: 600;
-        color: #F7F7F7;
-    }
-    
-    
-    /* Sobre Mim */
-    
-    .sobremim{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-    }
-    
-    .sobremim p{
-        width: 400px;
-        text-align: center;
-    }
-
-    .sobremim img{
-        max-width: 100%;
-        margin: 20px auto;
-    }
-
-    .img-sbr{
-        width: 400px;
-    }
-    
-    /* Projetos */
-
-    .aba-projetos{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 0;
-
-    }
-    
-    .aba-projetos h1{
-        font-size: 32px;
-        
-    }
-    
-    .projetos{
-        flex-direction: column;
-        gap: 50px;
-        display: flex;
-        justify-content: center;
-        width: 400px;
-    }
-    
-    .social-media{
-        width: 300px;
-    }
-
-    footer p{
-        font-size: 12px;
-        width: 25%;
-    }
-
-    footer ul a{
-        max-width: 40px;
-        max-height: 40px;
-    }
-    
-}
-
 
 /* Footer */
 /* Social Medias */
@@ -712,6 +546,189 @@ footer ul li{
       #fd1f1f
     );
   }
+
+
+
+/* Responsividade */
+
+@media(max-width: 800px){
+
+    .nav-bar{
+        padding: 0;
+        height: 60px;
+        justify-content: center;
+    }
+    
+    nav ul{
+        letter-spacing: 0px;
+        font-size: 13px;
+    }
+    
+    nav a{
+        padding: 0px 15px;
+    }
+
+    .nav-links{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(76, 159, 112, 0.9);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        transform: translateY(-100%);
+        visibility: hidden;
+        opacity: 0;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s;
+        z-index: 1000;
+        display: flex;
+    }
+
+    .nav-links.active{
+        transform: translateY(0);
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .nav-links li a{
+        color: #F7F7F7;
+        text-decoration: none;
+        font-size: 26px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links li a:active{
+        color: #A8A8A8;
+        text-decoration: underline;
+    }
+
+    .menu-hamburger{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+        z-index: 1100;
+        position: relative;
+    }
+
+    .menu-hamburger span{
+        width: 25px;
+        height: 3px;
+        background-color: #F7F7F7;
+    }
+
+    
+    
+    .apresentaçao{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 0px;
+        padding: 0;
+    }
+
+    
+    h1{
+        font-size: 34px;
+    }
+    
+    .apresentaçao p{
+        
+        font-size: 18px;
+        font-weight: 600;
+        color: #F7F7F7;
+    }
+    
+    
+    /* Sobre Mim */
+    
+    .sobremim{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 250px 0;
+    }
+    
+    .sobremim p{
+        width: auto;
+        margin: 20px;
+
+    }
+
+    .sobremim img{
+        max-width: 100%;
+        max-height: 100%;
+        margin: 20px auto;
+    }
+
+    .img-sbr{
+        width: 300px;
+        height: 300px;
+    }
+    
+    /* Projetos */
+
+    .aba-projetos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+
+    }
+    
+    .aba-projetos h1{
+        font-size: 32px;
+        
+    }
+    
+    .projetos{
+        flex-direction: column;
+        gap: 50px;
+        display: flex;
+        justify-content: center;
+        width: 400px;
+    }
+    
+    .social-media{
+        width: 300px;
+        gap: 20px;
+        margin: 20px auto;
+    }
+
+    footer p{
+        font-size: 12px;
+    }
+
+    footer ul a{
+        max-width: 40px;
+        max-height: 40px;
+        
+    }
+    
+}
+
+@media(max-width: 1280px) {
+
+    .projetos img{
+     max-width: 30vw;
+     width: auto;
+    }
+
+}
+
+
+
 
 
 
