@@ -97,7 +97,7 @@ nav{
     opacity: 0;
   }
   
-  /* actions */
+  
   
   .ui-switch input:checked+.slider .circle {
     left: calc(100% - var(--circle-diameter));
