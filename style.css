@@ -322,11 +322,12 @@ hr{
     display: flex;
     padding: 250px;
     color: #F7F7F7;
-    
+    text-align: center;
 }
 
 .sobremim p{
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
 }
 
 .img-sbr{
