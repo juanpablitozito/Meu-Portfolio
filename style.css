@@ -570,6 +570,7 @@ footer ul li{
         height: 60px;
         justify-content: center;
     }
+
     
     nav ul{
         letter-spacing: 0px;
@@ -737,22 +738,25 @@ footer ul li{
 }
 @media(max-width: 1280px){
     .sobremim{
-        padding: 250px 0;
+       flex-direction: column;
+         justify-content: center;
+         align-items: center;
+    }
+
+    .img-sbr{
+        max-width: 400px;
+        
     }
 
     .sobremim p{
-        font-size: 18px;
+        font-size: 15px;
         max-width: 400px;
         width: 100%;
         margin: 0 auto;
         text-align: center;
-
     }
 
-    .img-sbr{
-        width: 300px;
-        height: 300px;
-    }
+    
 
     .nav-bar li a{
         font-size: 13px;
@@ -760,6 +764,10 @@ footer ul li{
 
     .center-title{
         font-size: 13px;
+    }
+
+    .projetos{
+        flex-direction: column;
     }
     
 }
