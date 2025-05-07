@@ -252,6 +252,16 @@ h1{
     color: #F7F7F7;
     font-size: 52px;
     margin: 0;
+
+}
+
+h2{
+    color: #F7F7F7;
+    font-size: 52px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .apresentaçao p{
@@ -364,7 +374,7 @@ hr{
 
 
 .projetos{
-    flex-wrap: wrap;
+    
     padding: 15px;
     display: flex;
     justify-content: center;
@@ -399,14 +409,6 @@ hr{
     max-width: 600px;
 }
 
-.projeto1 img,
-.projeto2 img,
-.projeto3 img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  display: block;
-}
 
 .content-inside {
     width: 100%;
@@ -733,7 +735,25 @@ footer ul li{
     }
     
 }
+@media(max-width: 1280px){
+    .sobremim{
+        padding: 250px 0;
+    }
 
+    .sobremim p{
+        font-size: 18px;
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    .img-sbr{
+        width: 300px;
+        height: 300px;
+    }
+}
 
 
 
