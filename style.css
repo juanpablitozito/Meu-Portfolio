@@ -179,6 +179,10 @@ nav{
   );
 }
 
+.light-mode h4{
+    color: #000;
+}
+
 .center-title{
     position: absolute;
     left: 50%;
@@ -381,6 +385,7 @@ hr{
     align-items: center;
     gap: 20px;
     width: 100%;
+    padding-top: 100px;
 }
 
 .aba-projetos{
@@ -388,40 +393,48 @@ hr{
 }
 
 
-.projeto1{
+.projeto1,
+ .projeto2,
+ .projeto3{
     display: flex;
     flex-direction: column;
     position: relative;
     max-width: 600px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
 }
 
-.projeto2{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    max-width: 600px;
+
+ .projeto1 img,
+.projeto2 img,
+.projeto3 img {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
-.projeto3{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    max-width: 600px;
+h4{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #F7F7F7;
 }
+
 
 
 .content-inside {
-    width: 100%;
-    max-width: 100%;
     position: relative;
     display: inline-block;
     transition: filter 0.3s ease;
 }
 
-.content-inside:hover {
+.content-inside:hover{
     cursor: pointer;
-    filter: blur(5px);
+    filter: blur(3px);
 }
+
 
 .link {
     position: absolute;
