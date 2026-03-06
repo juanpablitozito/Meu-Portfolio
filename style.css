@@ -144,6 +144,27 @@ a.btn:hover {
     font-size: 1.05rem;
 }
 
+.skills {
+    padding: 6rem 1rem;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.skills-list li {
+    background: var(--card);
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: var(--txt-pri);
+    border: 1px solid rgb(255, 255, 255, 0.05);
+}
+
 .projects {
     padding: 6rem 1rem;
 }
@@ -198,6 +219,22 @@ a.btn:hover {
     margin-top: auto;
     display: flex;
     gap: 1rem;
+}
+
+.contato {
+    padding: 6rem 1rem;
+}
+
+.contato-text {
+    color: var(--txt-sec);
+    margin: 1.5rem 0 2.5rem;
+}
+
+.contato-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 
