@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--background);
     color: var(--txt-pri);
@@ -31,6 +35,10 @@ header {
     max-width: 1100px;
     margin: auto;
     padding: 1rem;
+}
+
+section {
+    scroll-margin-top: 80px;
 }
 
 .nav {
@@ -90,6 +98,7 @@ a.btn:hover {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .inicio-text h1 {
@@ -151,7 +160,9 @@ a.btn:hover {
 .skills-list {
     list-style: none;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    width: 15rem;
     gap: 1rem;
     margin-top: 2rem;
 }
@@ -177,13 +188,22 @@ a.btn:hover {
 }
 
 .project-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.6s;
     background: var(--card);
     padding: 2rem;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    border: 1px solid rgba(255,255,255,0.05);
     transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .project-card:hover {
@@ -235,6 +255,11 @@ a.btn:hover {
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
+}
+
+.btn-outline:hover {
+    background: var(--azul-claro);
+    color: #0F172A;
 }
 
 
